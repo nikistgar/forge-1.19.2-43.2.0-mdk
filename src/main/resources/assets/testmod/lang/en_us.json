@@ -1,3 +1,6 @@
 {
-  "item.testmod.sun": "Sun"
+  "item.testmod.sun": "Sun",
+  "item.testmod.moon": "Moon",
+
+  "itemGroup.testtab": "Sun and Moon"
 }

@@ -12,15 +12,15 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, TestMod.MOD_ID);
 
     public static final RegistryObject<Item> ZIRCON = ITEMS.register("zircon",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_TAB)));
 
     public static final RegistryObject<Item> SUN = ITEMS.register("sun",
             () -> new SwordItem(Tiers.WOOD, 0, -2.4f,
-                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).stacksTo(1)));
+                    new Item.Properties().tab(ModCreativeModeTab.TEST_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> MOON = ITEMS.register("moon",
-            () -> new SwordItem(Tiers.NETHERITE, 10, 5,
-                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).stacksTo(1)));
+            () -> new SwordItem(Tiers.WOOD, 13, -1.6f,
+                    new Item.Properties().tab(ModCreativeModeTab.TEST_TAB).stacksTo(1).durability(4000).fireResistant().rarity(Rarity.EPIC)));
 
     public static void register(IEventBus eventBus)
     {
