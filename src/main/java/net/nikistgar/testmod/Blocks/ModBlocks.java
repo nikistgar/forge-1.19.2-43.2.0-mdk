@@ -22,7 +22,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MOONSTONE_ORE = registerBlock("moonstone_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
+                    .strength(1).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
     {
