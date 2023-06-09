@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "testmod:block/moonstone_ore"
+    "all": "testmod:block/sun_stone_ore"
   }
 }

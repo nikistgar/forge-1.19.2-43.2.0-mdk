@@ -6,13 +6,13 @@
   "credit": "Forged from lunar stone",
     "texture_size": [128, 128],
     "textures": {
-      "0": "testmod:item/moon1",
-      "1": "testmod:item/moon2",
-      "2": "testmod:item/moon3",
-      "3": "testmod:item/moon4",
-      "4": "testmod:item/moon5",
-      "5": "testmod:item/moon6",
-      "particle": "testmod:item/moon1"
+      "0": "testmod:item/moon/moon1",
+      "1": "testmod:item/moon/moon2",
+      "2": "testmod:item/moon/moon3",
+      "3": "testmod:item/moon/moon4",
+      "4": "testmod:item/moon/moon5",
+      "5": "testmod:item/moon/moon6",
+      "particle": "testmod:item/moon/moon1"
     },
     "elements": [
       {
@@ -228,7 +228,7 @@
       "parent": "item/generated",
       "textures":
       {
-        "layer0": "testmod:item/moonmini"
+        "layer0": "testmod:item/moon/moonmini"
       },
       "gui_light": "front"
     }

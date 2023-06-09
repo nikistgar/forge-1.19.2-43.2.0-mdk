@@ -1,5 +1,6 @@
 {
-  "block.testmod.moonstone_ore": "Moonstone ore",
+  "block.testmod.moon_stone_ore": "Moonstone ore",
+  "block.testmod.sun_stone_ore": "Sunstone ore",
 
   "item.testmod.sun": "Sun",
   "item.testmod.moon": "Moon",

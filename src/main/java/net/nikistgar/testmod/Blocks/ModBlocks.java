@@ -20,7 +20,11 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, TestMod.MOD_ID);
 
-    public static final RegistryObject<Block> MOONSTONE_ORE = registerBlock("moonstone_ore",
+    public static final RegistryObject<Block> SUNSTONEORE = registerBlock("sun_stone_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(1).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
+
+    public static final RegistryObject<Block> MOONSTONEORE = registerBlock("moon_stone_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(1).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
 

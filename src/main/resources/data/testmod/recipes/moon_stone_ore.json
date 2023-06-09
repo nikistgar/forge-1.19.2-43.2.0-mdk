@@ -10,11 +10,11 @@
   {
     "#":
     {
-      "item": "testmod:moonstone_ore"
+      "item": "testmod:moon_stone_ore"
     }
   },
 "result":
 {
-  "item": "testmod:moonstone_ore"
+  "item": "testmod:moon_stone_ore"
 }
 }

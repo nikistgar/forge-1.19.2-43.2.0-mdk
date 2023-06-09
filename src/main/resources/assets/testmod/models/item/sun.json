@@ -6,13 +6,13 @@
     "credit": "Forged from solar stone",
     "texture_size": [128, 128],
     "textures": {
-    "0": "testmod:item/sun1",
-    "1": "testmod:item/sun2",
-    "2": "testmod:item/sun3",
-    "3": "testmod:item/sun4",
-    "4": "testmod:item/sun5",
-    "5": "testmod:item/sun6",
-    "particle": "testmod:item/sun1"
+    "0": "testmod:item/sun/sun1",
+    "1": "testmod:item/sun/sun2",
+    "2": "testmod:item/sun/sun3",
+    "3": "testmod:item/sun/sun4",
+    "4": "testmod:item/sun/sun5",
+    "5": "testmod:item/sun/sun6",
+    "particle": "testmod:item/sun/sun1"
   },
   "elements": [
     {
@@ -228,7 +228,7 @@
         "parent": "item/generated",
         "textures":
         {
-          "layer0": "testmod:item/sunmini"
+          "layer0": "testmod:item/sun/sunmini"
         },
         "gui_light": "front"
       }

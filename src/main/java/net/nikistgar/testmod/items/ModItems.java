@@ -13,7 +13,16 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, TestMod.MOD_ID);
 
-    public static final RegistryObject<Item> ZIRCON = ITEMS.register("zircon",
+    public static final RegistryObject<Item> SUNSTONE = ITEMS.register("sun_stone",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_TAB)));
+
+    public static final RegistryObject<Item> MOONSTONE = ITEMS.register("moon_stone",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_TAB)));
+
+    public static final RegistryObject<Item> PURIFIEDSUNSTONE = ITEMS.register("purified_sun_stone",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_TAB)));
+
+    public static final RegistryObject<Item> PURIFIEDMOONSTONE = ITEMS.register("purified_moon_stone",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEST_TAB)));
 
     public static final RegistryObject<Item> MOON = ITEMS.register("moon",
