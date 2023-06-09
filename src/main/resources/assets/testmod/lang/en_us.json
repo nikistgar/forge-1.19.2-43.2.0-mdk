@@ -1,8 +1,11 @@
 {
+  "block.testmod.moonstone_ore": "Moonstone ore",
+
   "item.testmod.sun": "Sun",
   "item.testmod.moon": "Moon",
 
   "itemGroup.testtab": "Sun and Moon",
+
   "effect.testmod.lunarblessing": "Lunar Blessing",
   "effect.testmod.solarblessing": "Solar Blessing",
   "effect.testmod.frozen": "Frozen",

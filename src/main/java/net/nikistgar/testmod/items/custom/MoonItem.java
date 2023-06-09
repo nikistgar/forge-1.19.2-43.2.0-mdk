@@ -16,8 +16,11 @@ public class MoonItem extends SwordItem {
     @Override
     public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
         if (Minecraft.getInstance().level.getDayTime() >= 13000) {
-            pTarget.addEffect(new MobEffectInstance(ModEffects.FROZEN.get(), 200), pAttacker);
             pAttacker.addEffect(new MobEffectInstance(ModEffects.LUNARBLESSING.get(), 200), pAttacker);
+            if (pAttacker.hasEffect(ModEffects.LUNARBLESSING.get()))
+            {
+                pTarget.addEffect(new MobEffectInstance(ModEffects.FROZEN.get(), 200), pAttacker);
+            }
         }
         return super.hurtEnemy(pStack, pTarget, pAttacker);
     }
