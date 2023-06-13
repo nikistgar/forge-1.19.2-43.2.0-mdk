@@ -16,9 +16,8 @@ public class IgnitedEffect extends MobEffect {
     public void applyEffectTick(LivingEntity pLivingEntity, int pAmplifier)
     {
         ticks ++;
-        if (ticks >= 40)
-        {
-            pLivingEntity.hurt(DamageSource.MAGIC, 2);
+        if (ticks >= 40) {
+            pLivingEntity.hurt(DamageSource.ON_FIRE, 2);
             ticks = 0;
         }
     }

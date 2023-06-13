@@ -1,4 +1,4 @@
-package net.nikistgar.testmod.Blocks;
+package net.nikistgar.testmod.blocks;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -25,6 +25,10 @@ public class ModBlocks {
                     .strength(1).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
 
     public static final RegistryObject<Block> MOONSTONEORE = registerBlock("moon_stone_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(1).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
+
+    public static final RegistryObject<Block> ALTAR = registerBlock("altar",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(1).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
 
