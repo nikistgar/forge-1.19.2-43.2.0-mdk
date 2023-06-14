@@ -14,6 +14,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nikistgar.testmod.TestMod;
+import net.nikistgar.testmod.blocks.custom.Altar;
 import net.nikistgar.testmod.items.ModCreativeModeTab;
 import net.nikistgar.testmod.items.ModItems;
 
@@ -32,8 +33,8 @@ public class ModBlocks {
                     .strength(4).requiresCorrectToolForDrops(), UniformInt.of(1,10)), ModCreativeModeTab.TEST_TAB);
 
     public static final RegistryObject<Block> ALTAR = registerBlock("altar",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(10).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
+            () -> new Altar(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(10).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.TEST_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
     {

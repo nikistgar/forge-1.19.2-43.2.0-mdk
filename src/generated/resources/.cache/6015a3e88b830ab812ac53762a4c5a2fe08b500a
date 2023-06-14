@@ -1,3 +1,5 @@
-// 1.19.2	2023-06-14T13:02:57.8218502	Item Models: testmod
+// 1.19.2	2023-06-14T13:48:14.881332	Item Models: testmod
 03c7cbe52d7d301fd0800e6f08e90b9dc90b4e8f assets/testmod/models/item/moon_stone.json
+83331b8b226f20f43313767db3ed7419fb7ae58c assets/testmod/models/item/purified_moon_stone.json
+1ff1169204e5394f05c8629751ac729001b07171 assets/testmod/models/item/purified_sun_stone.json
 e322c4decc0f896907bd1508fd1ecd1afb7b9095 assets/testmod/models/item/sun_stone.json
