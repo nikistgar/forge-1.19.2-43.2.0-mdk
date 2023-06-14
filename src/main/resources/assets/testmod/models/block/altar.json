@@ -1,12 +1,12 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "testmod:item/altar/altar5",
-    "1": "testmod:item/altar/altar1",
-    "2": "testmod:item/altar/altar2",
-    "4": "testmod:item/altar/altar4",
-    "5": "testmod:item/altar/altar3",
-    "particle": "testmod:item/altar/altar5"
+    "0": "testmod:block/altar/altar5",
+    "1": "testmod:block/altar/altar1",
+    "2": "testmod:block/altar/altar2",
+    "4": "testmod:block/altar/altar4",
+    "5": "testmod:block/altar/altar3",
+    "particle": "testmod:block/altar/altar5"
   },
   "elements": [
     {

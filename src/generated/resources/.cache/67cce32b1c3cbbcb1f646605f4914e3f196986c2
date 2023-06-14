@@ -1,0 +1,5 @@
+// 1.19.2	2023-06-14T01:15:59.6792375	LootTables
+c33b70f0a3b4e75fa6a7c7762035ef6f0b849e59 data/testmod/loot_tables/blocks/altar.json
+b8c8526ba129607e184326d9f9ef28a9208379fd data/testmod/loot_tables/blocks/moon_stone_ore.json
+2b5f5ad06d4d4886f201761e8f49fc3e542a4fa0 data/testmod/loot_tables/blocks/sun_stone_ore.json
+29b815a380dde52c4c431bf0a512663f1ff8855a data/testmod/loot_tables/chests/custom_chest_loot.json

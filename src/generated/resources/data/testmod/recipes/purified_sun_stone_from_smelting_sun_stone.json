@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "purified_sun_stone",
+  "ingredient": {
+    "item": "testmod:sun_stone"
+  },
+  "result": "testmod:purified_sun_stone"
+}

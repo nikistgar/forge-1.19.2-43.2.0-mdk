@@ -1,0 +1,5 @@
+// 1.19.2	2023-06-14T01:40:59.0370815	Block States: testmod
+c81bfd9ccf28b39c3eac2b0e42bfcf9ab410c87a assets/testmod/blockstates/moon_stone_ore.json
+a1a89dc719914077a1843b292020d6d849fd0b6c assets/testmod/blockstates/sun_stone_ore.json
+ef0cb21c1b375380d4201fcd593559846e2673e7 assets/testmod/models/block/moon_stone_ore.json
+2c72e6d85a65c63326b98d032aee65bed71c7ee2 assets/testmod/models/block/sun_stone_ore.json

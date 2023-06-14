@@ -1,9 +1,15 @@
 {
   "block.testmod.moon_stone_ore": "Moonstone ore",
   "block.testmod.sun_stone_ore": "Sunstone ore",
+  "block.testmod.altar": "Altar",
 
   "item.testmod.sun": "Sun",
   "item.testmod.moon": "Moon",
+
+  "item.testmod.moon_stone": "Moonstone",
+  "item.testmod.sun_stone": "Sunstone",
+  "item.testmod.purified_moon_stone": "Purified Moonstone",
+  "item.testmod.purified_sun_stone": "Purified Sunstone",
 
   "itemGroup.testtab": "Sun and Moon",
 
