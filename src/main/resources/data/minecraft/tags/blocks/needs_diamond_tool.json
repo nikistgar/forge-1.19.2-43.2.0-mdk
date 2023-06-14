@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "testmod:sun_stone_ore",
+    "testmod:moon_stone_ore",
+    "testmod:altar"
+  ]
+}

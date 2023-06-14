@@ -1,9 +1,12 @@
 package net.nikistgar.testmod.blocks;
 
+import net.minecraft.util.valueproviders.IntProvider;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,16 +24,16 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TestMod.MOD_ID);
 
     public static final RegistryObject<Block> SUN_STONE_ORE = registerBlock("sun_stone_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(0.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4).requiresCorrectToolForDrops(), UniformInt.of(1,10)), ModCreativeModeTab.TEST_TAB);
 
     public static final RegistryObject<Block> MOON_STONE_ORE = registerBlock("moon_stone_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(0.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4).requiresCorrectToolForDrops(), UniformInt.of(1,10)), ModCreativeModeTab.TEST_TAB);
 
     public static final RegistryObject<Block> ALTAR = registerBlock("altar",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(0.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
+                    .strength(10).requiresCorrectToolForDrops()), ModCreativeModeTab.TEST_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
     {

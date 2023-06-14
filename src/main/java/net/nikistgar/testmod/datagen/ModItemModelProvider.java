@@ -18,6 +18,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        simpleItem(ModItems.SUN_STONE);
+        simpleItem(ModItems.MOON_STONE);
+        //simpleItem(ModItems.PURIFIED_SUN_STONE);
+        //simpleItem(ModItems.PURIFIED_MOON_STONE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
