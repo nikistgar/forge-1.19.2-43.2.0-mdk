@@ -1,8 +1,10 @@
-// 1.19.2	2023-07-01T23:26:41.5355442	Recipes
-9382a04d24fc6d7169648e92f983538324494bae data/testmod/advancements/recipes/testtab/moon.json
+// 1.19.2	2023-07-02T00:01:27.674435	Recipes
+c8b8b536a7a0b77b221caf95cdaa8083f67132e1 data/testmod/advancements/recipes/testtab/altar.json
+9eeb19d20b1b2c95b4c9825241e964b820d06efe data/testmod/advancements/recipes/testtab/moon.json
 3d91b4ae8c58ece7837fdcbf9bf34e7ca244c5e5 data/testmod/advancements/recipes/testtab/purified_moon_stone_from_smelting_moon_stone.json
 e86b4c01a7c9b7ee3908387f310aa48c242f7d02 data/testmod/advancements/recipes/testtab/purified_sun_stone_from_smelting_sun_stone.json
-862f43e2e1f6b4ab3399a9d27d4ff70e8d91873a data/testmod/advancements/recipes/testtab/sun.json
+001d57f5010fb5ebc732b5d46f0516a063037fdf data/testmod/advancements/recipes/testtab/sun.json
+5789538eb92887e41470bd8a92668f57d0a79c56 data/testmod/recipes/altar.json
 2ba87955e5038d55fe817d033a96abd108d636a9 data/testmod/recipes/moon.json
 790cc91a3d6be264a64e5d564cb45d1b2d1dba8e data/testmod/recipes/purified_moon_stone_from_smelting_moon_stone.json
 445be80fae2ef065357b585fbbc9b16af5776c30 data/testmod/recipes/purified_sun_stone_from_smelting_sun_stone.json

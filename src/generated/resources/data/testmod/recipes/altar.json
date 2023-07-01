@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone"
+    },
+    "M": {
+      "item": "testmod:purified_moon_stone"
+    },
+    "S": {
+      "item": "testmod:purified_sun_stone"
+    }
+  },
+  "pattern": [
+    "S M",
+    "CCC",
+    " C ",
+    "M S",
+    "CCC",
+    " C "
+  ],
+  "result": {
+    "item": "testmod:altar"
+  }
+}

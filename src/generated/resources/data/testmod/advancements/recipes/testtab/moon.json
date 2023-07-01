@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_black_opal": {
+    "has_PURIFIED_MOON_STONE": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_black_opal",
+      "has_PURIFIED_MOON_STONE",
       "has_the_recipe"
     ]
   ],

@@ -38,7 +38,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" GP")
                 .pattern("GPG")
                 .pattern("SG ")
-                .unlockedBy("has_black_opal", inventoryTrigger(ItemPredicate.Builder.item()
+                .unlockedBy("has_PURIFIED_SUN_STONE", inventoryTrigger(ItemPredicate.Builder.item()
                                          .of(ModItems.PURIFIED_SUN_STONE.get()).build()))
                 .save(pFinishedRecipeConsumer);
 
@@ -49,9 +49,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" GP")
                 .pattern("GPG")
                 .pattern("SG ")
-                .unlockedBy("has_black_opal", inventoryTrigger(ItemPredicate.Builder.item()
+                .unlockedBy("has_PURIFIED_MOON_STONE", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.PURIFIED_MOON_STONE.get()).build()))
                 .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModBlocks.ALTAR.get())
+                .define('S', ModItems.PURIFIED_SUN_STONE.get())
+                .define('M', ModItems.PURIFIED_MOON_STONE.get())
+                .define('C', Items.COBBLESTONE)
+                .pattern("S M")
+                .pattern("CCC")
+                .pattern(" C ")
+                .unlockedBy("nothing", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.PURIFIED_SUN_STONE.get(), ModItems.PURIFIED_MOON_STONE.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
 
         //nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.BLACK_OPAL.get(), RecipeCategory.MISC,
         //        ModBlocks.BLACK_OPAL_BLOCK.get());

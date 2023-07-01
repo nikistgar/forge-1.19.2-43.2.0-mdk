@@ -1,34 +1,35 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_PURIFIED_SUN_STONE": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "testmod:altar"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "nothing": {
       "conditions": {
         "items": [
           {
             "items": [
-              "testmod:purified_sun_stone"
+              "testmod:purified_sun_stone",
+              "testmod:purified_moon_stone"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
-    },
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "testmod:sun"
-      },
-      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_PURIFIED_SUN_STONE",
+      "nothing",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "testmod:sun"
+      "testmod:altar"
     ]
   }
 }
