@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "P": {
+      "item": "testmod:purified_moon_stone"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " GP",
+    "GPG",
+    "SG "
+  ],
+  "result": {
+    "item": "testmod:moon"
+  }
+}

@@ -1,7 +1,9 @@
 package net.nikistgar.testmod.datagen;
 
+import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.client.RecipeBookCategories;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.nikistgar.testmod.TestMod;
 import net.nikistgar.testmod.blocks.ModBlocks;
@@ -25,6 +27,31 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(pFinishedRecipeConsumer, List.of(ModItems.SUN_STONE.get()),
                 ModItems.PURIFIED_SUN_STONE.get(), 0.7f, 200, "purified_sun_stone");
+
+        oreSmelting(pFinishedRecipeConsumer, List.of(ModItems.MOON_STONE.get()),
+                ModItems.PURIFIED_MOON_STONE.get(), 0.7f, 200, "purified_sun_stone");
+
+        ShapedRecipeBuilder.shaped(ModItems.SUN.get())
+                .define('S', Items.STICK)
+                .define('G', Items.GOLD_INGOT)
+                .define('P', ModItems.PURIFIED_SUN_STONE.get())
+                .pattern(" GP")
+                .pattern("GPG")
+                .pattern("SG ")
+                .unlockedBy("has_black_opal", inventoryTrigger(ItemPredicate.Builder.item()
+                                         .of(ModItems.PURIFIED_SUN_STONE.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModItems.MOON.get())
+                .define('S', Items.STICK)
+                .define('G', Items.GOLD_INGOT)
+                .define('P', ModItems.PURIFIED_MOON_STONE.get())
+                .pattern(" GP")
+                .pattern("GPG")
+                .pattern("SG ")
+                .unlockedBy("has_black_opal", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.PURIFIED_MOON_STONE.get()).build()))
+                .save(pFinishedRecipeConsumer);
 
         //nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.BLACK_OPAL.get(), RecipeCategory.MISC,
         //        ModBlocks.BLACK_OPAL_BLOCK.get());
