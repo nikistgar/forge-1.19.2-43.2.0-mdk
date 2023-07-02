@@ -1,6 +1,7 @@
 package net.nikistgar.testmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -11,8 +12,12 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.nikistgar.testmod.blocks.ModBlocks;
+import net.nikistgar.testmod.blocks.entity.ModBlockEntities;
 import net.nikistgar.testmod.effects.ModEffects;
 import net.nikistgar.testmod.items.ModItems;
+import net.nikistgar.testmod.recipe.ModRecipes;
+import net.nikistgar.testmod.screen.AltarScreen;
+import net.nikistgar.testmod.screen.ModMenuTypes;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -28,7 +33,12 @@ public class TestMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
         ModEffects.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -55,7 +65,7 @@ public class TestMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            MenuScreens.register(ModMenuTypes.ALTAR_MENU.get(), AltarScreen::new);
         }
     }
 }

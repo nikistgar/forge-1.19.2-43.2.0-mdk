@@ -14,9 +14,6 @@
   "pattern": [
     "S M",
     "CCC",
-    " C ",
-    "M S",
-    "CCC",
     " C "
   ],
   "result": {
